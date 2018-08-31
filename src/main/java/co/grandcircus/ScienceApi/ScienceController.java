@@ -28,13 +28,13 @@ public class ScienceController {
 		String url = "https://dwolverton.github.io/fe-demo/data/computer-science-hall-of-fame.json";
 
 		// Make the Request.
-		ResponseEntity<Tiny> response = restTemplate.exchange(url, HttpMethod.GET,
-				new HttpEntity<>(null), Tiny.class);
+		ResponseEntity<People> response = restTemplate.exchange(url, HttpMethod.GET,
+				new HttpEntity<>(null), People.class);
 
 		// Extract body from response.
-		Tiny result = response.getBody();
+		People result = response.getBody();
 		
-		mav.addObject("result", result.getClass());
+		mav.addObject("list1", result.getTiny());
 		return mav;
 	}
 	
@@ -53,13 +53,13 @@ public class ScienceController {
 		String url = "https://dwolverton.github.io/fe-demo/data/computer-science-hall-of-fame.json";
 
 		// Make the Request.
-		ResponseEntity<Complete> response = restTemplate.exchange(url, HttpMethod.GET,
-				new HttpEntity<>(null), Complete.class);
+		ResponseEntity<People> response = restTemplate.exchange(url, HttpMethod.GET,
+				new HttpEntity<>(null), People.class);
 
 		// Extract body from response.
-		Complete result = response.getBody();
+		People result = response.getBody();
 		
-		mav.addObject("result", result.getClass());
+		mav.addObject("list", result.getComplete());
 		return mav;
 	}
 	

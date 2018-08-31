@@ -16,7 +16,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach var="item" items="${ results }">
+				<c:forEach var="item" items="${ list }">
 					<tr>
 						<td>${ item.firstName }</td>
 						<td>${ item.lastName }</td>

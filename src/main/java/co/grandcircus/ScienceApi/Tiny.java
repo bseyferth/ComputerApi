@@ -8,6 +8,7 @@ public class Tiny {
 	private String name;
 	private String invented;
 	private Integer year;
+	
 	public String getName() {
 		return name;
 	}

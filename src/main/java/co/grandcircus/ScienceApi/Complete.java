@@ -7,7 +7,7 @@ public class Complete {
 	private List<Complete> complete;
 	private String firstName;
 	private String lastName;
-	private String innovaton;
+	private String innovation;
 	private Integer year;
 	public String getFirstName() {
 		return firstName;
@@ -21,11 +21,11 @@ public class Complete {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public String getInnovaton() {
-		return innovaton;
+	public String getInnovation() {
+		return innovation;
 	}
-	public void setInnovaton(String innovaton) {
-		this.innovaton = innovaton;
+	public void setInnovaton(String innovation) {
+		this.innovation = innovation;
 	}
 	public Integer getYear() {
 		return year;
@@ -33,12 +33,12 @@ public class Complete {
 	public void setYear(Integer year) {
 		this.year = year;
 	}
-	public Complete(List<Complete> complete,String firstName, String lastName, String innovaton, Integer year) {
+	public Complete(List<Complete> complete,String firstName, String lastName, String innovation, Integer year) {
 		super();
 		this.complete = complete;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.innovaton = innovaton;
+		this.innovation = innovation;
 		this.year = year;
 	}
 	
@@ -52,8 +52,8 @@ public class Complete {
 	}
 	@Override
 	public String toString() {
-		return "Complete [complete=" + complete + ", firstName=" + firstName + ", lastName=" + lastName + ", innovaton="
-				+ innovaton + ", year=" + year + "]";
+		return "Complete [complete=" + complete + ", firstName=" + firstName + ", lastName=" + lastName + ", innovation="
+				+ innovation + ", year=" + year + "]";
 	}
 
 	

@@ -18,11 +18,11 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach var="person" items="${ results }">
+				<c:forEach var="tiny" items="${ list1 }">
 					<tr>
-						<td>${ person.name }</td>
-						<td>${ person.invented }</td>
-						<td>${ person.year }</td>
+						<td>${ tiny.name }</td>
+						<td>${ tiny.invented }</td>
+						<td>${ tiny.year }</td>
 					</tr>
 				</c:forEach>
 			</tbody>
